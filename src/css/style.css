@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url(img/Fondo-pagina.png);
+    background-image: url("/img/Fondo-pagina.png");
     font-family: 'Cinzel', serif;
     background-repeat: no-repeat;
     background-position: center;
@@ -117,7 +117,7 @@ nav a:hover{
     height: 420px;
     margin: auto;
 
-    background-image: url("img/banner.png");
+    background-image: url("/img/banner.png");
 
     background-size: cover;
     background-position: center;
@@ -229,7 +229,7 @@ nav a:hover{
     max-height: 100%;
     max-width: 100%;
     aspect-ratio: 550 / 360;
-    background-image: url("img/silithus.png");
+    background-image: url("/img/silithus.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;

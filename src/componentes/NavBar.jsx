@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
     return (
@@ -10,14 +12,14 @@ function Navbar() {
                 </div>
             </section>
             <nav>
-                <a href="/">Inicio</a>
-                <a href="#">Colección</a>
-                <a href="#">Expansiones</a>
-                <a href="#">Logros</a>
-                <a href="/tools">Herramientas</a>
+                <Link to="/">Inicio</Link>
+                <Link to="/collection">Colección</Link>
+                <Link to="/expansions">Expansiones</Link>
+                <Link to="/achievements">Logros</Link>
+                <Link to="/tools">Herramientas</Link>
             </nav>
             <div className="profile">
-                <span><a href="/login">Iniciar Sesión</a></span>
+                <span><Link to="/login">Iniciar Sesión</Link></span>
             </div>
         </header>
     );

@@ -6,7 +6,7 @@ import Tools from "./paginas/Tools";
 
 function App() {
     return (
-        <HashRouter basename={import.meta.env.BASE_URL}>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
