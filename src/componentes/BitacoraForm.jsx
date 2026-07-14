@@ -49,7 +49,7 @@ function BitacoraForm({ registros, setRegistros, bitacoraEditando, setBitacoraEd
     }
 
     useEffect(() => {
-
+        // Esta en rojo porque no es tan eficiente, pero funciona. Es un tema de como REACT maneja tareas asyncronas que no quize hacer.
         if (bitacoraEditando) {
             setNickname(bitacoraEditando.nickname);
             setComentario(bitacoraEditando.comentario);
