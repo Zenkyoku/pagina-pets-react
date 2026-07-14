@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <header class="navbar">
+            <section class="logo">
+                <img src="img/WoW_icon.svg.png" alt="Logo navegación" >
+                <div class="titulo-logo">
+                    <h1>WoW</h1>
+                    <span>Maestro Pokewow</span>
+                </div>
+            </section>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="#">Colección</a>
+                <a href="#">Expansiones</a>
+                <a href="#">Logros</a>
+            </nav>
+            <div class="profile">
+                <span><a href="login.html">Iniciar Sesión</a></span>
+            </div>
+        </header>
+        
+
+        <section class="contenedor-login">
+            <button id="btnTema" class="boton-tema">🌙 Cambiar Tema</button>
+            <h2>Únete al Gremio de Coleccionistas</h2>
+            <p id="saludo"></p>
+            
+            <form id="formulario" class="formulario">
+                <div>
+                    <label>Nombre</label>
+                    <br>
+                    <input type="text" id="nombre">
+                    <br>
+                    <small class="error" id="errorNombre"></small>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" id="email">
+                    <br>
+                    <small class="error" id="errorEmail"></small>
+                </div>
+                <div>
+                    <label>Edad</label>
+                    <br>
+                    <input type="number" id="edad">
+                    <br>
+                    <small class="error" id="errorEdad"></small>
+                </div>
+                <div>
+                    <label>
+                        <input type="checkbox" id="terminos">
+                        Acepto los términos del gremio
+                    </label>
+                    <br>
+                    <small class="error" id="errorTerminos"></small>
+                </div>
+
+                <button type="submit" id="btnEnviar" disabled>
+                    Registrarse
+                </button>
+                <p id="mensajeExito"></p>
+            </form>
+            <section class="registro" id="tablaRegistros" style="display: none;">
+                <h2>Usuarios Registrados</h2>
+                <div class="tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Email</th>
+                                <th>Edad</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cuerpoTabla">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
