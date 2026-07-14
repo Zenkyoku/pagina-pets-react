@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 
+const baseUrl = import.meta.env.BASE_URL;
 
 function Navbar() {
     return (
         <header className="navbar">
             <section className="logo">
-                <img src="/img/WoW_icon.svg.png" alt="Logo navegación" />
+                <img src={`${baseUrl}img/WoW_icon.svg.png`} alt="Logo navegación" />
                 <div className="titulo-logo">
                     <h1>WoW</h1>
                     <span>Maestro Pokewow</span>
